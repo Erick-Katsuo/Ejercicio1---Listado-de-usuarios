@@ -1,0 +1,51 @@
+body {
+    max-width: 1366px;
+    margin: 0 auto;
+    background-image: url(https://www.wired.com/wp-content/uploads/2014/10/ut_interstellarOpener_f.png);
+    background-size: 1200px;
+    background-color: #cccccc;
+}   
+
+body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap:10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:10px;
+}
+
+header, main{
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: black;
+    padding: 15px;
+    color: green;
+}
+
+main {
+    grid-row:1;
+    grid-column:1/4.5;
+}
+
+main{
+    background-image: url(https://media.giphy.com/media/Q9aBxHn9fTqKs/giphy.gif);
+}
+
+span{
+    color: white;
+}
+
+#resultadoRegistro,#resultadoIngreso,#ingresar,#crearCuenta{
+    background-color: black;
+}
+
+
+aside{
+    grid-row:1;
+    grid-column:4/7;
+    color: brown;
+}

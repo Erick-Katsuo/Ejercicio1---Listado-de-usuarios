@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css" />
+    </head>
+    <body>
+        <main>
+            <section>
+                <h2 id="ingresar">Ingresar</h2>
+                <span> Usuario </span>
+                <input type="text" id="usuario" /> 
+                <span> Contraseña </span>
+                <input type="password" id="clave" />
+                <button onclick="Cuenta.ingresar();">Entrar</button>
+                <div id="resultadoIngreso"/>
+            </section>
+            <section>
+                <h2 id="crearCuenta"> Crear cuenta </h2>
+                <span> Nuevo usuario </span>
+                <input type="text" id="nuevoUsuario" />
+                <span> Nueva contraseña </span>
+                <input type="password" id="nuevaClave" />
+                <span> Verifique contraseña </span>
+                <input type="password" id="verificarClave" />
+                <button onclick="Cuenta.registro();">Registrarse</button>
+                <div id="resultadoRegistro"/>
+            </section>
+        </main>
+        <aside>
+            <button onclick="Cuenta.mostrarRegistrados();">Jakiar Sistema :D</button>
+            <div id="resultadoLista"/>
+        </aside>
+        <script src="programa.js"> </script>
+    </body>
+</html>
